@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/*--------------------------------------------- Calendar --------------------------------------------- */
+table.Calendar
+{
+	border						:	none;
+	border-collapse			:	collapse;
+	width						:	100%;
+}
+td.CalendarHeader
+{
+	border-collapse			:	collapse;
+	border						:	solid 1px #bbbbbb;
+	font-weight				:	bold;
+	background-color			:	#eeeecc;
+	padding-top				:	2px;
+	padding-bottom			:	2px;
+	padding-left				:	8px;
+	padding-right				:	8px;
+	white-space				:	nowrap;
+}
+td.CalendarDay
+{
+	border						:	solid 1px #bbbbbb;
+	background-color			:	#ffffff;
+	padding-top				:	2px;
+	padding-bottom			:	2px;
+	padding-left				:	8px;
+	padding-right				:	8px;
+	white-space				:	nowrap;
+}
+td.CalendarDaySunday
+{
+	border					:	solid 1px #bbbbbb;
+	background-color			:	#ffeeee;
+	padding-top				:	2px;
+	padding-bottom			:	20px;
+	padding-left				:	8px;
+	padding-right				:	8px;
+}
+td.CalendarDaySaturday
+{
+	border					:	solid 1px #bbbbbb;
+	background-color			:	#ccddee;
+	padding-top				:	2px;
+	padding-bottom			:	20px;
+	padding-left				:	8px;
+	padding-right				:	8px;
+}
+td.CalendarDayException
+{
+	color					:	#cccccc;
+	border					:	solid 1px #bbbbbb;
+	background-color			:	#f7f7f7;
+	padding-top				:	2px;
+	padding-bottom			:	20px;
+	padding-left				:	8px;
+	padding-right				:	8px;
+}
+td.CalendarDayTarget
+{
+	border					:	solid 1px #bbbbbb;
+	color					:	#cc0000;
+	font-weight				:	bold;
+	background-color			:	#ffffdd;
+	padding-top				:	2px;
+	padding-bottom			:	20px;
+	padding-left				:	8px;
+	padding-right				:	8px;
+}
+td.CalendarDay:hover
+{
+	background-color			:	#ddeecc;
+}
+td.CalendarDaySaturday:hover
+{
+	background-color			:	#ddeecc;
+}
+td.CalendarDaySunday:hover
+{
+	background-color			:	#ddeecc;
+}
+

@@ -23,7 +23,6 @@ import { ActivatedRoute } from '@angular/router';
   `
 })
 export class AboutComponent implements OnInit {
-
   public localState: any;
   constructor(
     public route: ActivatedRoute

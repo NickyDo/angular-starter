@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* Tab */
+div.TabLeft
+{
+	float						:	left;
+	margin						:	0px 10px 0px 0px;
+}
+div.TabRight
+{
+	float						:	right;
+	margin						:	0px 0px 0px 10px;
+}
+div.Tab, div.TabDefault, div.TabSelected
+{
+	font-size					:	18px;
+	font-weight					:	bold;
+	line-height					:	1.6em;
+	padding						:	5px 20px 0px 20px;
+}
+div.Tab, div.TabDefault
+{
+	background-color			:	#e7e7e7;
+}
+div.TabSelected
+{
+	background-color			:	#ffeeee;
+	background-image			:	url(../image/header/Background.png);
+	background-repeat			:	repeat;
+	color						:	#ff3300;
+}
+div.PanelTabSub
+{
+	background-color			:	#ffeeee;
+	background-image			:	url(../image/header/Background.png);
+	background-repeat			:	repeat;
+	padding						:	5px 10px;
+	font-size					:	14px;
+}
+td.PanelTab
+{
+	border-bottom				:	solid 3px #ff9999;
+}
+
+
+
+
+td.TabSelected
+{
+	background-color		:	#DDE777;
+	padding-left				:	16px;
+	padding-right			:	16px;
+}
+td.TabNonSelected
+{
+	background-color		:	#E7E7E7;
+	padding-left				:	16px;
+	padding-right			:	16px;
+}

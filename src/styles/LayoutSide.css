@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+
+/* Scout Side */
+#PanelSide
+{
+	position						:	absolute;
+	position						:	fixed;
+	width							:	200px;
+	height							:	800px;
+	min-height						:	100%;
+	margin							:	0px 0px 0px 0px;
+	padding						:	0px;
+	z-index							:	2000;
+	background-color					:	#efefef;
+}
+
+/* Side Compny */
+#PanelSideCompany
+{
+	margin							:	25px auto;
+	text-align						:	center;
+}
+#PanelSideCompanyLogo
+{
+}
+#PanelSideCompanyLogo img
+{
+	width							:	auto;
+	height							:	auto;
+	max-width						:	110px;
+	max-height						:	110px;
+}
+#PanelSideCompanyName
+{
+}
+#PanelSideCompanyHead
+{
+	border-left						:	solid 4px #19c919;
+	background-color					:	#e3e3e3;
+	font-size						:	14px;
+	padding						:	5px 4px 5px 0px;
+	margin							:	15px 0px 0px 0px;
+}
+
+/* Side Status */
+#PanelSideStatus
+{
+	margin							:	0px 0px 15px 0px;
+}
+#PanelSideStatusLabel
+{
+	position						:	relative;
+	width							:	125px;
+	margin							:	0px auto;
+	padding						:	4px 0px;
+	border-style						:	solid;
+	border-width						:	1px;
+	background-repeat					:	no-repeat;
+	background-position					:	right center;
+	text-align						:	center;
+	line-height						:	16px;
+	letter-spacing						:	0.25em;
+}
+#PanelSideStatusLabel a
+{
+	text-decoration					:	none;
+}
+#PanelSideStatusLabel:hover
+{
+	color							:	#ffffff;
+	border-color						:	#ff9900;
+	background-color					:	#ff9900;
+}
+#PanelSideStatusLabel:after
+{
+	position						:	absolute;
+	top							:	5px;
+	right							:	5px;
+	font-size						:	8px;
+	content						:	"▼";
+}
+div.PanelSideStatusLabelWelcome
+{
+	color							:	#19c919;
+	border-color						:	#19c919;
+}
+div.PanelSideStatusLabelWelcome a
+{
+	color							:	inherit;
+}
+div.PanelSideStatusLabelFinished
+{
+	color							:	#666666;
+	border-color						:	#666666;
+}
+div.PanelSideStatusLabelFinished a
+{
+	color							:	inherit;
+}
+div.PanelSideStatusLabelPresent
+{
+	color							:	#ffffff;
+	border-color						:	#19c919;
+	background-color					:	#19c919;
+}
+div.PanelSideStatusLabelPresent a
+{
+	color							:	inherit;
+}
+div.PanelSideStatusLabelAbsent
+{
+	color							:	#ff0000;
+	border-color						:	#ff0000;
+}
+div.PanelSideStatusLabelAbsent a
+{
+	color							:	inherit;
+}
+
+/* Side Menu */
+#PanelSideMenu
+{
+}
+#PanelSideMenu ul
+{
+	margin							:	0px;
+	padding						:	0px;
+	list-style-type						:	none;
+}
+#PanelSideMenu li
+{
+	background-position					:	25px 15px;
+	background-repeat					:	no-repeat;
+	padding						:	15px 0px 15px 50px;
+	margin							:	0px 0px 0px 0px;
+	white-space						:	nowrap;
+}
+#PanelSideMenu li.PanelSideMenuSelected
+{
+	background-color					:	#ffffff;
+}
+#PanelSideMenu a
+{
+	font-size						:	14px;
+	line-height						:	16px;
+	color							:	#464646;
+	text-decoration					:	none;
+	margin							:	0px;
+	padding						:	0px;
+}
+#PanelSideMenu li:hover
+{
+	background-color					:	#d6d6d6;
+}
+#PanelSideMenu li#ListScoutSideMenuManage
+{
+	background-image					:	url(../image/common/Side/Menu/Icon/Manage.png);
+}
+#PanelSideMenu li#ListScoutSideMenuMessage
+{
+	background-image					:	url(../image/common/Side/Menu/Icon/Message.png);
+}
+#PanelSideMenu li#ListScoutSideMenuScout
+{
+	background-image					:	url(../image/common/Side/Menu/Icon/Scout.png);
+}
+#PanelSideMenu li#ListScoutSideMenuFavorite
+{
+	background-image					:	url(../image/common/Side/Menu/Icon/Favorite.png);
+}
+#PanelSideMenu li#ListScoutSideMenuSchedule
+{
+	background-image					:	url(../image/common/Side/Menu/Icon/Schedule.png);
+}
+#PanelSideMenu li#ListScoutSideMenuEntry
+{
+	background-image					:	url(../image/common/Side/Menu/Icon/Entry.png);
+}
+#PanelSideMenu li#ListScoutSideMenuConfig
+{
+	background-image					:	url(../image/common/Side/Menu/Icon/Config.png);
+}
+

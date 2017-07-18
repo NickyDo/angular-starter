@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/* Footer */
+footer
+{
+	background-color			:	#363636;
+}
+#PanelFooter
+{
+	position					:	relative;
+	text-align				:	left;
+	height					:	160px;
+}
+#PanelFooter *
+{
+	color					:	#ffffff;
+}
+#PanelFooter ul
+{
+	margin						:	0px;
+	padding						:	0px;
+	list-style-type				:	none;
+}
+#PanelFooter ul li
+{
+	margin					:	0px;
+	padding					:	0px;
+}
+#PanelFooterLogo
+{
+	position					:	absolute;
+	top						:	30px;
+	left						:	-2px;
+}
+#PanelFooterMenu
+{
+	position					:	absolute;
+	top						:	30px;
+	left						:	160px;
+	display					:	table;
+	text-align				:	left;
+}
+#PanelFooterMenu ul
+{
+	display					:	table-cell;
+	padding-right			:	40px;
+}
+#PanelFooterContact
+{
+	position					:	absolute;
+	top						:	30px;
+	left						:	465px;
+	text-align				:	left;
+}
+#PanelFooterContact h2
+{
+	font-size				:	12px;
+	line-height				:	18px;
+	margin					:	0px 0px 2px 0px;
+}
+#ListFooterContactTelephone
+{
+	background-image			:	url(../image/common/Footer/Contact/Telephone.png);
+	background-repeat			:	no-repeat;
+	background-position			:	0px 3px;
+	padding						:	0px 0px 0px 20px !important;
+}
+#ListFooterContactEmail
+{
+	background-image			:	url(../image/common/Footer/Contact/Email.png);
+	background-repeat			:	no-repeat;
+	background-position			:	0px 4px;
+	padding						:	0px 0px 0px 20px !important;
+}
+#PanelFooterApplication
+{
+	position					:	absolute;
+	top						:	30px;
+	left						:	665px;
+	text-align				:	left;
+}
+#PanelFooterButton
+{
+	position					:	absolute;
+	top						:	30px;
+	left						:	785px;
+	text-align				:	left;
+}
+#PanelFooterButton li
+{
+	line-height					:	14px;
+}
+#PanelFooterCopyright
+{
+	position						:	absolute;
+	top							:	110px;
+	left							:	0px;
+	font-size					:	9px;
+}

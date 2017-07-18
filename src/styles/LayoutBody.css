@@ -1,0 +1,504 @@
+@charset "utf-8";
+
+/* Back */
+#PanelBack
+{
+	position						:	absolute;
+	position						:	fixed;
+	top							:	0px;
+	left							:	0px;
+	width							:	100%;
+	margin							:	0px 0px 0px 0px;
+	padding						:	15px 0px 15px 240px;
+	z-index							:	1000;
+	background-color					:	#ffffff;
+	border-bottom						:	solid 2px #19c919;
+	opacity						:	0.95;
+}
+#PanelBack a
+{
+	font-size						:	14px;
+ 	color							:	#19c919;
+	padding						:	0px 0px 0px 12px;
+}
+#PanelBack a:before
+{
+	position						:	absolute;
+	top							:	50%;
+	left							:	240px;
+	width							:	6px;
+	height							:	6px;
+	margin							:	-5px 0px 0px 0px;
+	border-top						:	solid 1px #19c919;
+	border-left						:	solid 1px #19c919;
+	transform						:	rotate(-45deg);
+	-webkit-transform					:	rotate(-45deg);
+	-ms-transform						:	rotate(-45deg);
+	content						:	"";
+	text-decoration					:	none;
+}
+
+/* Time */
+#PanelAlert
+{
+	position						:	absolute;
+	position						:	fixed;
+	top							:	54px;
+	left							:	0px;
+	width							:	100%;
+	margin							:	0px 0px 0px 0px;
+	padding						:	12px 0px 12px 0px;
+	z-index							:	1000;
+	background-color					:	#e9584e;
+	color							:	#ffffff;
+	opacity						:	0.95;
+	font-size						:	16px;
+	line-height						:	16px;
+	text-align						:	center;
+}
+#PanelAlertMargin
+{
+	height							:	40px;
+}
+#ImageAlertIcon
+{
+	width							:	16px;
+	margin							:	0px 2px -2px 0px;
+}
+
+/* Schedule */
+#PanelScheduleButton
+{
+	margin							:	0px 0px 20px 0px;
+}
+#PanelScheduleButtonRefresh
+{
+	text-align						:	center;
+	margin							:	0px 0px -20px 0px;
+}
+#PanelScheduleButtonRefresh a
+{
+	background-color					:	#ffffff;
+	border							:	solid 2px #b0b0b0;
+	border-radius						:	5px;
+	padding						:	10px 20px;
+	font-size						:	16px;
+	text-decoration					:	none;
+}
+#PanelScheduleButtonRefresh a:hover
+{
+	color							:	#cc0000;
+	border-color						:	#cc0000;
+}
+div.PanelScheduleButtonPager a
+{
+	background-color					:	#dddddd;
+	border-radius						:	5px;
+	padding						:	10px;
+	font-size						:	14px;
+}
+div.PanelScheduleButtonPager a:hover
+{
+	color							:	#ffffff;
+	background-color					:	#ff9900;
+	text-decoration					:	none;
+	border-color						:	#ffffff;
+}
+#PanelScheduleButtonPagerPrevious
+{
+	float							:	left;
+}
+#PanelScheduleButtonPagerPrevious a
+{
+	position						:	relative;
+	padding						:	10px 20px 10px 32px;
+}
+#PanelScheduleButtonPagerPrevious a:before
+{
+	position						:	absolute;
+	top							:	50%;
+	left							:	15px;
+	width							:	8px;
+	height							:	8px;
+	margin							:	-6px 0px 0px 0px;
+	border-top						:	solid 3px #000000;
+	border-left						:	solid 3px #000000;
+	transform						:	rotate(-45deg);
+	-webkit-transform					:	rotate(-45deg);
+	-ms-transform						:	rotate(-45deg);
+	content						:	"";
+	text-decoration					:	none;
+}
+#PanelScheduleButtonPagerNext
+{
+	float							:	right;
+}
+#PanelScheduleButtonPagerNext a
+{
+	position						:	relative;
+	padding						:	10px 32px 10px 20px;
+}
+#PanelScheduleButtonPagerNext a:after
+{
+	position						:	absolute;
+	top							:	50%;
+	right							:	15px;
+	width							:	8px;
+	height							:	8px;
+	margin							:	-6px 0px 0px 0px;
+	border-top						:	solid 3px #000000;
+	border-right						:	solid 3px #000000;
+	transform						:	rotate(45deg);
+	-webkit-transform					:	rotate(45deg);
+	-ms-transform						:	rotate(45deg);
+	content						:	"";
+	text-decoration					:	none;
+}
+
+
+
+/* Table */
+table.TableSchedule
+{
+	width							:	100%;
+	border-collapse					:	collapse;
+}
+table.TableSchedule td
+{
+	text-align						:	center;
+	border							:	solid 1px #cccccc;
+	padding						:	4px;
+	font-size						:	14px;
+}
+tr.ListDate
+{
+}
+td.ListDate
+{
+	background-color					:	#ffffff;
+}
+td.ListTime
+{
+	text-align						:	left;
+}
+td.ListAvailability
+{
+	width							:	6,5%;
+}
+td.ListAvailabilityHigh
+{
+	color							:	#ffffff;
+	background-color					:	#33cf33;
+}
+td.ListAvailabilityLow
+{
+	background-color					:	#ffeddc;
+}
+td.ListAvailabilityVoid
+{
+	background-color					:	#ffffff;
+}
+tr.ListTime:hover td.ListTime
+{
+	color							:	#cc0000;
+	background-color					:	#fafafa;
+}
+tr.ListTime:hover td.ListAvailabilityHigh
+{
+}
+tr.ListTime:hover td.ListAvailabilityLow
+{
+	
+}
+tr.ListTime:hover td.ListAvailabilityVoid
+{
+	background-color					:	#fafafa;
+}
+
+
+span.LabelDateWeekday
+{
+	color							:	#8d8d8d;
+}
+span.LabelDateSaturday
+{
+	color							:	#8dd1f5;
+}
+span.LabelDateSunday,
+span.LabelDateHoliday
+{
+	color							:	#f5bfbd;
+}
+
+/* Message */
+div.PanelMessageMain
+{
+	margin							:	0px 0px 20px 0px;
+	font-size						:	18px;
+	line-height						:	1.8em;
+	font-weight						:	normal;
+	letter-spacing						:	0.1em;
+}
+div.PanelMessageSub
+{
+	font-size						:	18px;
+	line-height						:	1.8em;
+	font-weight						:	normal;
+	color							:	#666666;
+	margin							:	0px 0px 20px 0px;
+}
+div.PanelMessageIcon
+{
+	text-align						:	center;
+	margin							:	100px auto;
+}
+
+/* Form */
+div.PanelForm *
+{
+	font-size						:	18px;
+}
+div.PanelForm input[type=file]
+{
+	font-size						:	12px;
+}
+div.PanelForm
+{
+	border-bottom						:	solid 1px #c0c0c0;
+	padding						:	0px 0px 20px 0px;
+}
+div.PanelForm div.PanelFormError
+{
+	color							:	#ff0000;
+}
+#PanelIcon
+{
+	margin							:	0px auto 60px auto;
+}
+#PanelMessage
+{
+	font-size						:	18px;
+}
+div.PanelForm h1
+{
+	font-size						:	32px !important;
+}
+div.PanelForm dl
+{
+	text-align						:	left;
+	padding						:	15px 0px 0px 0px;
+	margin							:	0px;
+}
+div.PanelForm dl.PanelForm
+{
+}
+div.PanelForm dt
+{
+	float							:	left;
+	width							:	150px;
+	padding						:	5px 0px 0px 0px;
+	margin							:	0px;
+}
+div.PanelForm dd
+{
+	float							:	left;
+	margin							:	0px;
+}
+div.PanelForm dd.PanelFormRequirement
+{
+	width							:	40px;
+	padding						:	5px 0px 0px 0px;
+}
+div.PanelForm dd.PanelFormInput
+{
+	padding						:	0px 0px 0px 0px;
+}
+div.PanelForm dd div.PanelFormInput
+{
+	color							:	#a1a1a1;
+	padding						:	5px 0px 0px 0px;
+}
+div.PanelForm dd.PanelFormInput input.InputText
+{
+}
+div.PanelForm dd.PanelFormInput select
+{
+}
+div.PanelForm dd.PanelFormInput select option
+{
+}
+div.PanelForm input.InputCheckBox
+{
+	width							:	30px;
+	height							:	30px;
+}
+div.PanelForm div.PanelFormError
+{
+	border-color						:	#ff0000;
+}
+div.PanelFormInputCheckBox
+{
+	float							:	left;
+	margin							:	0px 30px 0px 0px;
+}
+img.ImageFormInputToggle
+{
+	margin							:	0px 5px -4px 0px;
+	line-height						:	0px;
+}
+
+/* Modal */
+div.PanelModal
+{
+	position						:	absolute;
+	top							:	0;
+	left							:	0;
+	display							:	none;
+	width							:	100%;
+	height							:	200%;
+	background-color					:	rgba(0,0,0,0.6);
+	z-index							:	10000;
+}
+div.PanelModal:target
+{
+	display							:	block;
+}
+div.PanelModalInner
+{
+	background-color					:	#ffffff;
+	width							:	800px;
+	margin							:	100px auto;
+	padding						:	60px 0px;
+	text-align						:	center;
+}
+div.PanelModalInner div.PanelMessageMain
+{
+	margin							:	0px auto 30px auto;
+}
+div.PanelModalInner div.PanelMessageSub
+{
+	margin							:	0px auto 50px auto;
+}
+div.PanelModalInner div.PanelMessageIcon
+{
+	margin							:	0px auto 30px auto;
+}
+div.PanelModalInner div.PanelMessageButton
+{
+	margin							:	0px auto 0px auto;
+}
+div.PanelModalInner div.PanelMessageButton div.InputButton
+{
+	display							:	inline-block;
+	margin							:	0px 10px;
+}
+
+#PanelConfirmationLegal
+{
+}
+
+#PanelConfirmationLegal div.title 
+{
+	text-align: center;
+	font-size: 20px;
+	height: 45px;
+	line-height: 45px;
+	border-bottom: 1px solid grey;
+}
+
+#PanelConfirmationLegal 
+{
+	height							:	600px;
+	width                           :   800px;    
+	/*overflow-y						:	scroll;*/
+}
+
+#PanelConfirmationLegal div.PanelModalInner
+{
+	height							:	420px;
+	width 							:   780px;
+	overflow-y						:	scroll;
+	padding							:	50px;
+	text-align						:	left;
+}
+#PanelConfirmationLegal div.PanelModalInner h2
+{
+	text-align						:	center;
+}
+#PanelConfirmationLegal div.PanelModalInner h3
+{
+	color							:	#666666;
+}
+div.PanelConfirmationDetailButton
+{
+	text-align						:	center;
+}
+div.PanelConfirmationDetailButton div
+{
+	display							:	inline-block;
+	margin							:	20px 10px;
+}
+
+#PanelConfirmationPrivacyPolicy
+{
+}
+
+#PanelConfirmationPrivacyPolicy 
+{
+	height                         : 600px;
+	widows                         : 800px;
+}
+
+#PanelConfirmationPrivacyPolicy div.title 
+{
+	font-size 						: 20px;
+	text-align 						: center;
+	border-bottom 					: 1px solid grey;
+	height 							: 45px;
+	line-height 					: 45px;
+}
+
+
+#PanelConfirmationPrivacyPolicy div.PanelModalInner
+{
+	height							:	420px;
+	width   						: 780px;
+	overflow-y						:	scroll;
+	padding							:	50px;
+	text-align						:	left;
+}
+#PanelConfirmationPrivacyPolicy div.PanelModalInner h2
+{
+	text-align						:	center;
+}
+#PanelConfirmationPrivacyPolicy div.PanelModalInner h3
+{
+	color							:	#666666;
+}
+#PanelConfirmationDetailButton
+{
+	text-align						:	center;
+}
+
+#PanelConfirmationStatus
+{
+}
+#PanelConfirmationStatusConfiguration
+{
+	width							:	500px;
+	margin							:	50px auto;
+	padding						:	20px 30px;
+	border-bottom						:	solid 1px #999999;
+}
+#PanelConfirmationStatusConfigurationLabel
+{
+	float							:	left;
+	font-size						:	24px;
+	line-height						:	2em;
+}
+#PanelConfirmationStatusConfigurationForm
+{
+	float							:	right;
+	font-size						:	24px;
+	line-height						:	1em;
+}

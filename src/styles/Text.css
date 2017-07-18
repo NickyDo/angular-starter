@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/* Base */
+body, p, td, div, form, input, select, option, textarea, dl, dt, dd
+{
+	font-size				:	12px;
+	line-height				:	1.8em;
+}
+*
+{
+	font-family				:	'ÉqÉâÉMÉmäpÉS ProN W3','Hiragino Kaku Gothic ProN','ÉÅÉCÉäÉI',Meiryo,'ÇlÇr ÇoÉSÉVÉbÉN',sans-serif ;
+}
+
+/* Label */
+span.enhanced, span.LabelEnhanced
+{
+	font-weight				:	bold;
+	color					:	#990000;
+}
+span.alert, span.LabelAlert
+{
+	color					:	#cc0000;
+	font-weight				:	normal;
+}
+span.transparent, span.LabelTransparent
+{
+	color					:	#cccccc;
+}
+span.LabelCaption
+{
+	font-size				:	85%;
+}
+span.LabelAlternate
+{
+	display					:	none;
+}
+span.LabelExtraLarge
+{
+	font-size				:	18px;
+}
+span.LabelLarge
+{
+	font-size				:	16px;
+	line-height				:	1.6em;
+}
+span.LabelSmall
+{
+	font-size				:	10.5px;
+	line-height				:	1.6em;
+}
+
+/* Text */
+p
+{
+	margin					:	0em 0em 1em 0em;
+}
+
+/* Star */
+font.StarActive
+{
+	color					:	#0033cc;
+}
+font.StarInactive
+{
+	color					:	#dddddd;
+}
+
+/* Headline */
+h1
+{
+	color					:	#19c919;
+	font-size				:	30px;
+	font-weight				:	normal;
+	letter-spacing				:	0.1em;
+	margin					:	0px 0px 30px 0px;
+}
+h1.LabelDefault
+{
+	color					:	#363636;
+}
+h2
+{
+	color					:	#363636;
+	font-weight				:	normal;
+	margin					:	0px 0px 25px 0px;
+}
+h3
+{
+	color					:	#662200;
+	line-height				:	1.5em;
+	margin					:	0px 0px 20px 0px;
+}
+h1.PanelTitle
+{
+}
+h1.PanelTitle img
+{
+	height					:	30px;
+}
+h2.PanelTitle
+{
+}
+h2.PanelTitle img
+{
+	height					:	30px;
+}
+h3.PanelTitle
+{
+}
+h3.PanelTitle img
+{
+	height					:	30px;
+}
+h2.SectionTitle {
+    font-size: 20px;
+    text-align: center;
+    margin: 40px 0 25px;
+}

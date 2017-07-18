@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/* Link */
+a
+{
+	outline			:	none;
+}
+a:link
+{
+	text-decoration	:	none;
+	color			:	#707070;
+}
+a:visited
+{
+	text-decoration	:	none;
+	color			:	#707070;
+}
+a:hover
+{
+	text-decoration	:	none;
+	color			:	#cc0000;
+}
+a:active
+{
+	text-decoration	:	none;
+	color			:	#ff6600;
+}
+
+/* Button */
+a.LabelButton
+{
+	border-radius				:	5px;
+	padding				:	30px 0px;
+	font-size				:	16px;
+	font-weight				:	normal;
+	text-decoration			:	none;
+	border-width				:	1px;
+	border-style				:	solid;
+	white-space				:	nowrap;
+	background-repeat			:	no-repeat;
+	background-position			:	10px 10px;
+}
+a.LabelButtonGreen
+{
+	color					:	#19c919;
+	background-color			:	#ffffff;
+	border-color				:	#19c919;
+}
+a.LabelButtonRegister,
+a.LabelButtonGreenMat
+{
+	color					:	#ffffff;
+	background-color			:	#19c919;
+	border-color				:	#19c919;
+}
+a.LabelButtonAlert,
+a.LabelButtonRed
+{
+	color					:	#cc0000;
+	background-color			:	#ffffff;
+	border-color				:	#cc0000;
+}
+a.LabelButtonSubmit,
+a.LabelButtonBlackMat
+{
+	color					:	#ffffff;
+	background-color			:	#313131;
+	border-color				:	#313131;
+}
+a.LabelButtonNormal,
+a.LabelButtonBlack
+{
+	color					:	#313131;
+	background-color			:	#ffffff;
+	border-color				:	#313131;
+}
+a.LabelButton:hover
+{
+	color					:	#ffffff;
+	background-color			:	#ff9900;
+	border					:	solid 1px #ff9900;
+}

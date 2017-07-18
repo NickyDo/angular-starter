@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/* Print */
+@media
+screen
+{
+	.Screen, .PanelScreen, .LabelScreen
+	{
+		display		:	block;
+	}
+	.Print, .PanelPrint, .LabelPrint
+	{
+		display		:	none;
+	}
+}
+@media
+print
+{
+	.Screen, .PanelScreen, .LabelScreen
+	{
+		display		:	none;
+	}
+	.Print, .PanelPrint, .LabelPrint
+	{
+		display		:	block;
+	}
+	div
+	{
+		zoom		:	1;
+	}
+}

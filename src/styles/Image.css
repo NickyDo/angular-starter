@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/* Image */
+img
+{
+	border					:	none;
+}
+a img
+{
+	border					:	none;
+}
+a:hover img.RollOver
+{
+	opacity					:	0.5;
+	-moz-opacity				:	0.5;
+	filter					:	alpha(opacity=50);
+}
+img.ButtonInactive
+{
+	opacity					:	0.3;
+	-moz-opacity				:	0.3;
+	filter					:	alpha(opacity=30);
+	border					:	none;
+}
+
+img.Photo
+{
+	margin-bottom				:	5px;
+}
+img.PhotoLeft
+{
+	float					:	left;
+	margin					:	0em 1em 1em 0em;
+}
+img.PhotoRight
+{
+	float					:	right;
+	margin					:	0em 0em 1em 1em;
+}
+img.Title
+{
+	margin-bottom				:	10px;
+}
+img.PhotoFrame
+{
+	border					:	solid 1px #999999;
+	background-color			:	#ffffff;
+	padding					:	10px;
+}

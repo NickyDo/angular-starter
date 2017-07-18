@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/* Body */
+body
+{
+	color					:	#363636;
+	background-color		:	#efefef;
+	margin					:	0px 0px 0px 0px;
+}
+
+/* Panel */
+#PanelContent
+{
+	margin					:	0px;
+}
+#PanelContentOuter
+{
+	width					:	980px;
+	margin					:	0px auto;
+	padding					:	0px;
+}
+#PanelContentInner
+{
+	padding					:	0px 0px;
+}
+
+/* Column */
+div.left, div.PanelLeft
+{
+	float				:	left;
+}
+div.right, div.PanelRight
+{
+	float				:	right;
+}
+div.clear, div.PanelClear
+{
+	clear				:	both;
+}
+
+/* Slider */
+div.PanelSlider
+{
+}
+div.PanelSlider ul
+{
+	list-style-type				:	none;
+	margin						:	0px;
+	padding						:	0px;
+	text-align					:	center;
+}
+div.PanelSlider li
+{
+	margin						:	0px;
+	padding						:	0px;
+	text-align					:	center;
+}
+
+/* Accordion */
+div.PanelAccordion
+{
+}
+div dt
+{
+	margin					:	0px;
+	padding					:	0px;
+}
+div dd
+{
+}
+
+
+
+/* Common */
+div.PanelRelative
+{
+	position						:	relative;
+}
+div.PanelAbsolute
+{
+	position						:	absolute;
+}
+
+
+div.PanelParagraphGap
+{
+	height						:	30px;
+}
+
+div.PanelSeo, div.PanelAlternate, .Seo
+{
+	display						:	none;
+}

@@ -1,0 +1,98 @@
+@charset "utf-8";
+@import "../../../styles/Form.css";
+@import "../../../styles/Text.css";
+@import "../../../styles/Anchor.css";
+@import "../../../styles/LayoutCommon.css";
+@import "../../../styles/v5/foundation.min.css";
+/* Common */
+#PanelFooter {
+  margin: 0px auto;
+  width: 905px;
+}
+
+/* Login */
+#PanelLogin {
+  background-color: #ffffff;
+  width: 745px;
+  padding: 55px 110px;
+  margin: 110px auto;
+  text-align: center;
+}
+
+#PanelLogin h1 {
+  color: #6876c1;
+}
+
+#PanelLoginForm {
+}
+
+#PanelLoginForm * {
+  font-size: 18px;
+}
+
+#PanelLoginForm div.PanelLoginForm {
+  border-bottom: solid 1px #c0c0c0;
+  padding: 0px 0px 20px 0px;
+}
+
+#PanelLoginForm h1 {
+  font-size: 32px !important;
+}
+
+#PanelLoginForm dl {
+  text-align: left;
+  padding: 15px 0px 0px 0px;
+}
+
+#PanelLoginForm dt {
+  float: left;
+  width: 130px;
+  padding: 5px 0px 0px 0px;
+  margin: 0px;
+  font-weight: normal;
+}
+
+#PanelLoginForm dd {
+  float: left;
+  margin: 0px;
+}
+
+#PanelLoginForm input {
+  width: 300px;
+}
+
+#PanelLoginButton {
+  margin: 70px 135px;
+}
+
+#PanelLoginButtonLogin {
+  float: left;
+}
+
+#LabelLoginButtonLogin {
+  font-size: 18px;
+  padding: 30px 85px;
+}
+
+#PanelLoginButtonEntry {
+  float: right;
+}
+
+#LabelLoginButtonEntry {
+  font-size: 18px;
+  padding: 30px 65px;
+}
+
+#PanelLoginButtonSub {
+  margin: 0px 0px;
+}
+
+#PanelLoginButtonSub a {
+  color: #707070;
+}
+
+#PanelLoginError {
+  color: #ff0000;
+  text-align: center;
+  font-size: 16px;
+}

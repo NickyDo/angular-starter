@@ -1,0 +1,531 @@
+@charset "utf-8";
+
+/* Form */
+div.PanelFormButton
+{
+	text-align				:	center;
+	margin					:	30px 0px;
+}
+div.PanelFormButton div
+{
+	display					:	inline-block;
+}
+div.PanelFormButton img
+{
+	margin				:	0px 10px;
+}
+div.PanelFormError
+{
+	border-color			:	#ff0000;
+	color					:	#ff0000;
+}
+
+div.PanelFormError input, div.PanelFormError textarea
+{
+	border-color						:	#ff0000;
+}
+
+/* Input */
+input.InputJapanese, textarea.InputJapanese
+{
+	ime-mode				:	active;
+}
+input.InputEnglish, textarea.InputEnglish
+{
+	ime-mode				:	inactive;
+}
+textarea.InputText
+{
+	border-color				:	#cccccc;
+	border-radius				:	5px;
+}
+input.InputText
+{
+	border-color				:	#cccccc;
+}
+input.InputText, select
+{
+	padding					:	1px 0px 1px 10px;
+	border-radius				:	5px;
+	border-style				:	solid;
+	border-width				:	1px;
+}
+input.InputTextDefault
+{
+	border-color				:	#cccccc;
+}
+input.InputTextError
+{
+	border-color				:	#ff0000;
+}
+input.InputCheckBox
+{
+	border-radius				:	5px;
+	width					:	20px;
+	height					:	20px;
+	padding					:	0px;
+}
+input.InputCheckBox:checked
+{
+	color					:	#ffffff;
+	background				:	#19c919;
+}
+
+input[type=radio].InputRadioButton,
+input[type=checkbox].InputCheckBox
+{
+	display: inline-block;
+	margin-right: 6px;
+}
+input[type=radio].InputRadioButton + label,
+input[type=checkbox].InputCheckBox + label
+{
+	position: relative;
+	display: inline-block;
+	margin-right: 12px;
+	font-size: 14px;
+	line-height					:	30px;
+	cursor: pointer;
+}
+.UploadButton input
+{
+	display:none;
+}
+.UploadButton span
+{
+	display:inline-block;
+}
+@media
+(
+	min-width					:	1px
+)
+{
+	input[type=radio].InputRadioButton,
+	input[type=checkbox].InputCheckBox
+	{
+		display: none;
+		margin: 0;
+	}
+	input[type=radio].InputRadioButton + label,
+	input[type=checkbox].InputCheckBox + label
+	{
+		padding					:	0 0 0 28px;
+	}
+	input[type=radio].InputRadioButton + label::before,
+	input[type=checkbox].InputCheckBox + label::before
+	{
+		content: "";
+		position: absolute;
+		top					:	50%;
+		left					:	0;
+		-webkit-box-sizing			:	border-box;
+		-moz-box-sizing				:	border-box;
+		box-sizing				:	border-box;
+		display					:	block;
+		width					:	18px;
+		height					:	18px;
+		margin-top				:	-9px;
+		background-color			:	#ffffff;
+	}
+	input[type=radio].InputRadioButton + label::before
+	{
+		border					:	1px solid #c2ced2;
+		border-radius				:	30px;
+	}
+	input[type=checkbox].InputCheckBox + label::before
+	{
+		/*border					:	1px solid #c2ced2;*/
+	}
+	input[type=radio].InputRadioButton:checked + label::after,
+	input[type=checkbox].InputCheckBox:checked + label::after
+	{
+		content					:	"";
+		position					:	absolute;
+		top					:	50%;
+		-moz-box-sizing				:	border-box;
+		box-sizing				:	border-box;
+		display					:	block;
+	}
+	input[type=radio].InputRadioButton:checked + label::after
+	{
+		left					:	5px;
+		width					:	8px;
+		height					:	8px;
+		margin-top				:	-4px;
+		background				:	#19c5ff;
+		border-radius				:	8px;
+	}
+	input[type=checkbox].InputCheckBox + label:before
+	{
+		background: url('../assets/v5/checkbox-unchecked.png') bottom left no-repeat;
+	}
+	input[type=checkbox].InputCheckBox:checked + label::before
+	{
+		/*background				:	#19c919;*/
+		content: "";
+	    display: inline-block;
+	    width: 18px;
+	    height: 18px;
+	    margin-right: 10px;
+	    position: absolute;
+	    left: 0;
+	    top: 13px;
+	    background: url('../assets/v5/checkbox-checked.png') bottom left no-repeat;
+	}
+	input[type=checkbox].InputCheckBox:checked + label::after
+	{
+		/*left					:	2px;
+		width					:	14px;
+		height					:	6px;
+		margin-top				:	-4px;
+		border-left				:	3px solid #ffffff;
+		border-bottom				:	3px solid #ffffff;
+		-webkit-transform			:	rotate(-45deg);
+		transform				:	rotate(-45deg);*/
+	}
+}
+
+/* Check Box Switch */
+div.PanelFormInputChekBoxSwitch
+{
+	text-align						:	left;
+}
+div.PanelFormInputChekBoxSwitch input[type=checkbox].InputCheckBoxSwitch
+{
+	position							:	absolute;
+	opacity							:	0;
+}
+div.PanelFormInputChekBoxSwitch label
+{
+	position							:	relative;
+	display							:	block;
+	width							:	4em;
+	height							:	2em;
+	padding							:	1px;
+	background-color					:	#eeeeee;
+	border-radius						:	2em;
+	border							:	1px solid #b4b4b4;
+}
+
+div.PanelFormInputChekBoxSwitch label:before
+{
+	position							:	absolute;
+	content							:	"OFF";
+	display							:	block;
+	top							:	50%;
+	right							:	8%;
+	margin-top						:	-10%;
+	font-size						:	75%;
+	line-height						:	1em;
+	color							:	#999999;
+	text-align						:	left;
+	z-index							:	100;
+}
+
+div.PanelFormInputChekBoxSwitch label:after
+{
+	position							:	absolute;
+	content							:	"";
+	display							:	block;
+	top							:	0px;
+	left							:	0px;
+	width							:	40%;
+	height							:	100%;
+	margin							:	0px;
+	border-radius						:	2em;
+	background-color					:	#ffffff;
+	z-index							:	10;
+}
+
+div.PanelFormInputChekBoxSwitch :checked + label
+{
+	position							:	relative;
+	content							:	"";
+	border							:	1px solid #ffcc00;
+	background-color					:	#ffcc00;
+	border-size						:	1px;
+}
+div.PanelFormInputChekBoxSwitch :checked + label:before
+{
+	position							:	absolute;
+	content							:	"ON";
+	display							:	block;
+	top							:	50%;
+	left							:	12%;
+	margin-top						:	-10%;
+	line-height						:	1em;
+	text-align						:	left;
+	color							:	#ffffff;
+	z-index							:	100;
+}
+div.PanelFormInputChekBoxSwitch :checked + label:after
+{
+	position							:	absolute;
+	content							:	"";
+	display							:	block;
+	top							:	0px;
+	right							:	0px;
+	width							:	40%;
+	height							:	100%;
+	margin							:	0px 0px 0px 60%;
+	line-height						:	0em;
+	border-radius						:	2em;
+	background-color					:	#ffffff;
+	z-index							:	10;
+}
+
+
+/* Button */
+.InputButton
+{
+	text-align						:	center;
+	border							:	solid 1px;
+	border-radius						:	5px;
+	font-size						:	18px;
+}
+.InputButton:hover
+{
+	cursor							:	pointer;
+	color							:	#ffffff;
+	border-color						:	#ff9900;
+	background-color					:	#ff9900;
+}
+.UploadButton p
+{
+	text-align						:	center;
+	border							:	solid 1px #bbb;
+	border-radius						:	5px;
+	font-size						:	12px;
+	width:100px;
+	padding:5px;
+	background:#ddd;
+	color:#666;
+	display:inline-block;
+}
+.InputButtonLarge
+{
+	width							:	340px;
+	padding							:	30px 0px;
+	font-size						:	18px;
+}
+.InputButtonLargeWide
+{
+	width							:	500px;
+	padding							:	30px 0px;
+	font-size						:	18px;
+}
+.InputButtonMiddle
+{
+	width							:	200px;
+	padding							:	15px 0px;
+	font-size						:	18px;
+}
+.InputButtonMiddleWide
+{
+	width							:	300px;
+	padding							:	15px 0px;
+	font-size						:	18px;
+}
+.InputButtonSmall
+{
+	width							:	120px;
+	padding							:	10px 0px;
+	font-size						:	14px;
+}
+.InputButtonExtraSmall
+{
+	width							:	90px;
+	padding							:	5px 0px;
+	font-size						:	14px;
+}
+.InputButtonListLarge
+{
+	width							:	160px;
+	padding							:	6px 0px;
+	font-size						:	14px;
+	letter-spacing						:	0.25em;
+}
+.InputButtonListSmall
+{
+	width							:	90px;
+	padding							:	6px 0px;
+	font-size						:	14px;
+	letter-spacing						:	0.25em;
+}
+.InputButtonDetailSmallWide
+{
+	width							:	200px;
+	padding							:	10px 0px;
+	font-size						:	18px;
+}
+.InputButtonDetailSmall
+{
+	width							:	150px;
+	padding							:	10px 0px;
+	font-size						:	18px;
+}
+
+
+.InputButtonBlack
+{
+	color							:	#333333;
+	border-color						:	#333333;
+	background-color					:	#ffffff;
+}
+.InputButtonBlackMat
+{
+	color							:	#ffffff;
+	border-color						:	#333333;
+	background-color					:	#333333;
+}
+.InputButtonLightGray
+{
+	color							:	#bbbbbb;
+	border-color						:	#bbbbbb;;
+	background-color					:	#ffffff;
+}
+.InputButtonLightGrayMat
+{
+	color							:	#ffffff;
+	border-color						:	#bbbbbb;
+	background-color					:	#bbbbbb;
+}
+.InputButtonGray
+{
+	color							:	#666666;
+	border-color						:	#666666;
+	background-color					:	#ffffff;
+}
+.InputButtonGrayMat
+{
+	color							:	#ffffff;
+	border-color						:	#666666;
+	background-color					:	#666666;
+}
+.InputButtonRed
+{
+	color							:	#cc0000;
+	border-color						:	#cc0000;
+	background-color					:	#ffffff;
+}
+.InputButtonRedMat
+{
+	color							:	#ffffff;
+	border-color						:	#cc0000;
+	background-color					:	#cc0000;
+}
+.InputButtonPink
+{
+	color							:	#eb685f;
+	border-color						:	#eb685f;
+	background-color					:	#ffffff;
+}
+.InputButtonPinkMat
+{
+	color							:	#ffffff;
+	border-color						:	#eb685f;
+	background-color					:	#eb685f;
+}
+.InputButtonGreen
+{
+	color							:	#19c919;
+	border-color						:	#19c919;
+	background-color					:	#ffffff;
+}
+.InputButtonGreenMat
+{
+	color							:	#ffffff;
+	border-color						:	#19c919;
+	background-color					:	#19c919;
+}
+.InputButtonPurple
+{
+	color							:	#6666cc;
+	border-color						:	#6666cc;
+	background-color					:	#ffffff;
+}
+.InputButtonPurpleMat
+{
+	color							:	#ffffff;
+	border-color						:	#6666cc;
+	background-color					:	#6666cc;
+}
+.InputButtonTransparent
+{
+	color							:	#666666;
+	border-color						:	rgba(255,255,255,0);
+	background-color					:	rgba(255,255,255,0);
+}
+
+.InputButtonDetailVideo
+{
+	width							:	170px;
+	padding							:	10px 0px;
+	font-size						:	14px;
+}
+.InputButtonDetailVideoPlay
+{
+	color							:	#19c919;
+	border-color						:	#19c919;
+	background-image					:	url(../assets/common/Body/Button/Video/Default.png);
+	background-repeat					:	no-repeat;
+	background-position					:	15px center;
+}
+.InputButtonDetailVideoPlay:hover
+{
+	color							:	#ffffff;
+	background-image					:	url(../assets/common/Body/Button/Video/Hover.png);
+	background-color					:	#ff9900;
+	border							:	solid 1px #ff9900;
+}
+
+/* Photo */
+div.PanelFormInputPhoto
+{
+	width							:	105px;
+	text-align						:	center;
+}
+div.PanelFormInputPhotoThumbnail
+{
+	width							:	100%;
+	height							:	80px;
+	margin							:	0px 0px 10px 0px;
+	text-align						:	center;
+}
+div.PanelFormInputPhotoThumbnailVoid
+{
+	background-color					:	#e5e5e5;
+	background-image					:	url(../assets/common/Body/Photo/Void.png);
+	background-repeat					:	no-repeat;
+	background-position					:	center center;
+}
+div.PanelFormInputPhotoThumbnail img
+{
+	width							:	auto;
+	height							:	auto;
+	max-width						:	100%;
+	max-height						:	80px;
+}
+div.PanelFormInputPhotoSelect
+{
+	width							:	100%;
+	height							:	2em;
+	margin							:	0px 0px 0px 0px;
+	white-space						:	nowrap;
+}
+div.PanelFormInputPhotoSelect input
+{
+	width							:	100%;
+}
+div.PanelFormInputPhotoSelectFlagCheckBox
+{
+	width							:	100%;
+	margin							:	0px 0px 10px 0px;
+}
+
+/* Panel */
+div.PanelForm
+{
+	text-align					:	center;
+	margin						:	30px 0px;
+}

@@ -7,7 +7,7 @@ describe('App', () => {
     /**
      * Change hash depending on router LocationStrategy.
      */
-    await browser.get('/#/home');
+    await browser.get('/#/about');
   });
 
   it('should have a title', async () => {

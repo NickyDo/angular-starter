@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+/* List */
+table.List
+{
+	border						:	none;
+	border-collapse				:	collapse;
+	width						:	100%;
+}
+tr.List:hover td
+{
+	background-color			:	#ccddee;
+}
+td.ListHeader
+{
+	border-collapse				:	collapse;
+	border-top					:	solid 1px #999999;
+	border-bottom				:	solid 1px #999999;
+	font-weight					:	bold;
+	background-color			:	#ddccdd;
+	padding						:	6px 12px;
+	white-space					:	nowrap;
+}
+td.ListName, td.ListNameRequire
+{
+	border-top					:	solid 1px #999999;
+	border-bottom				:	solid 1px #999999;
+	font-weight					:	bold;
+	background-color			:	#eeeeee;
+	padding						:	6px 12px;
+	white-space					:	nowrap;
+}
+td.ListNameRequire
+{
+
+}
+td.ListContent
+{
+	border-top					:	solid 1px #999999;
+	border-bottom				:	solid 1px #999999;
+	background-color			:	#ffffff;
+	padding						:	6px 12px;
+}
+td.ListStripe0
+{
+	border-top					:	solid 1px #999999;
+	border-bottom				:	solid 1px #999999;
+	background-color			:	#ffffff;
+	padding						:	6px 12px;
+}
+td.ListStripe1
+{
+	border-top					:	solid 1px #999999;
+	border-bottom				:	solid 1px #999999;
+	background-color			:	#eeeeee;
+	padding						:	6px 12px;
+}
+td.ListError
+{
+	border-top					:	solid 1px #999999;
+	border-bottom				:	solid 1px #999999;
+	background-color			:	#ffeeee;
+	padding						:	6px 12px;
+}
+
+/* List */
+ul, ol
+{
+	text-indent				:	0em;
+	margin-left				:	0em;
+	padding-left				:	0em;
+}
+li
+{
+	margin						:	0em 0em 0em 2em;
+	list-style-position			:	outside;
+}
+
+/* Slider */
+div.PanelSlider ul
+{
+	margin						:	0px;
+	padding						:	0px;
+	list-style-type				:	none;
+}
+div.PanelSlider li
+{
+	margin						:	0px;
+	padding						:	0px;
+	list-style-type				:	none;
+}
+
+
+
+
+
+/* Icon */
+li.ListPdf
+{
+	height						:	16px;
+	background-image			:	url(../image/common/Body/Icon/Pdf/pdf16.gif);
+	background-repeat			:	no-repeat;
+	list-style-type				:	none;
+	margin						:	0.5em 0em;
+	padding						:	0px 0px 0px 24px;
+}
+li.ListPdfLarge
+{
+	height						:	32px;
+	background-image			:	url(../image/common/Body/Icon/Pdf/pdf32.gif);
+	background-repeat			:	no-repeat;
+	list-style-type				:	none;
+	margin						:	0.5em 0em;
+	padding						:	8px 0px 0px 40px;
+}
+li.ListWord
+{
+	height						:	16px;
+	background-image			:	url(../image/common/Body/Icon/Word/Word16.gif);
+	background-repeat			:	no-repeat;
+	list-style-type				:	none;
+	margin						:	0.5em 0em;
+	padding						:	0px 0px 0px 24px;
+}
+li.ListWordLarge
+{
+	height						:	32px;
+	background-image			:	url(../image/common/Body/Icon/Word/Word32.gif);
+	background-repeat			:	no-repeat;
+	list-style-type				:	none;
+	margin						:	0.5em 0em;
+	padding						:	8px 0px 0px 40px;
+}
+li.ListExcel
+{
+	height						:	16px;
+	background-image			:	url(../image/common/Body/Icon/Excel/Excel16.gif);
+	background-repeat			:	no-repeat;
+	list-style-type				:	none;
+	margin						:	0.5em 0em;
+	padding						:	0px 0px 0px 24px;
+}
+li.ListExcelLarge
+{
+	height						:	32px;
+	background-image			:	url(../image/common/Body/Icon/Excel/Excel32.gif);
+	background-repeat			:	no-repeat;
+	list-style-type				:	none;
+	margin						:	0.5em 0em;
+	padding						:	8px 0px 0px 40px;
+}
+li.ListLink
+{
+	background-image			:	url(../image/common/Body/Icon/Link/Arrow.gif);
+	background-repeat			:	no-repeat;
+	background-position			:	0px 4px;
+	list-style-type				:	none;
+	margin						:	0.5em 0em;
+	padding						:	0px 0px 0px 18px;
+}
